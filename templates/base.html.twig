@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- ––––––––––––––––––––––––––––––––––––––––– -->
+        <!-- PAGE FAVICON                              -->
+        <!-- ––––––––––––––––––––––––––––––––––––––––– -->
+        <!-- ––––––––––––––––––––––––––––––––––––––––– -->
+        <!-- GOOGLE FONTS                              -->
+        <!-- ––––––––––––––––––––––––––––––––––––––––– -->
+        <link href="https://fonts.googleapis.com/css?family=Dosis:600,700%7COpen+Sans:600,700" rel="stylesheet" />
+        <title>{% block title %}{% endblock %}</title>
+        <link rel="icon" type="image/icon" href="assets/images/favicon/favicon.png" />
+        {% block seo %}{% endblock %}
+        {% block stylesheets %}
+            <!-- ––––––––––––––––––––––––––––––––––––––––– -->
+            <!-- Include CSS Filess                        -->
+            <!-- ––––––––––––––––––––––––––––––––––––––––– -->
+            <!-- Bootstrap -->
+            <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+            <!-- Font Awesome -->
+            <link href="assets/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+            <link href="assets/fonts/linearicons/css/linearicons.css" rel="stylesheet">
+            <!-- Flaticon -->
+            <link href="assets/fonts/flaticon/flaticon.css" rel="stylesheet">
+            <!-- Owl Carousel -->
+            <link href="assets/vendors/owl-carousel/owl.carousel.min.css" rel="stylesheet">
+            <link href="assets/vendors/owl-carousel/owl.theme.min.css" rel="stylesheet">
+            <!-- Magnific popup -->
+            <link href="assets/vendors/magnific-popup/css/magnific-popup.css" rel="stylesheet">
+            <!-- Template Stylesheet -->
+            <link href="assets/css/base.css" rel="stylesheet">
+            <link href="assets/css/style.css" rel="stylesheet">
+        {% endblock %}
+    </head>
+    <body id="body" class="wide-layout preloader-active">
+        <!-- ––––––––––––––––––––––––––––––––––––––––– -->
+        <!-- PRELOADER                                 -->
+        <!-- ––––––––––––––––––––––––––––––––––––––––– -->
+        <!-- Preloader -->
+        <div id="preloader" class="preloader">
+            <div class="loader-cube">
+                <div class="loader-cube__item1 loader-cube__item"></div>
+                <div class="loader-cube__item2 loader-cube__item"></div>
+                <div class="loader-cube__item4 loader-cube__item"></div>
+                <div class="loader-cube__item3 loader-cube__item"></div>
+            </div>
+        </div>
+        <!-- End Preloader -->
+        {% block body %}
+        {% endblock %}
+        {% block javascripts %}
+                <!-- =========[ jQuery library ]========= -->
+                <script src="assets/js/jquery-1.12.3.min.js"></script>
+                <!-- ========[ Latest Bootstrap ]======== -->
+                <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+                <!-- ========[ JavaScript Plugins ]======== -->
+                <!-- (!) Include all compiled plugins (below), or include individual files as needed -->
+                <!-- Owl Carousel -->
+                <script type="text/javascript" src="assets/vendors/owl-carousel/owl.carousel.min.js"></script>
+                <!-- Magnific popup -->
+                <script type="text/javascript" src="assets/vendors/magnific-popup/js/jquery.magnific-popup.min.js"></script>
+                <!-- jQuery Easing v1.3 -->
+                <script type="text/javascript" src="assets/vendors/jquery.easing.1.3.min.js"></script>
+                <!-- jQuery Easing v1.3 -->
+                <script type="text/javascript" src="assets/vendors/jquery.appear.js"></script>
+                <!-- =====[ Custom Template JavaScript ]===== -->
+                <script type="text/javascript" src="assets/js/main.js"></script>
+                <script type="text/javascript" src="assets/js/drift-chat.js"></script>
+        {% endblock %}
+    </body>
+</html>
